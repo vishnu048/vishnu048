@@ -3,549 +3,491 @@
 
 <head>
     <!-- Theme Made By www.w3schools.com -->
-    <title>Bootstrap Theme Company Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            font: 400 15px Lato, sans-serif;
-            line-height: 1.8;
-            color: #818181;
+<title>Bootstrap Theme Company Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script>
+function getIn(){
+    <a href="#contact"></a>
+}
+</script>
+<style>
+    .newstyle { 
+        font-size: 20px;
+        color: #3d3b3b
+
+    }
+    body {
+        font: 400 15px Lato, sans-serif;
+        line-height: 1.8;
+        color: #818181;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .jumbotron {
+        background-color: #11767e;
+        color: #fff;
+        padding: 100px 25px;
+        font-family: Montserrat, sans-serif;
+    }
+
+    .container-fluid {
+        padding: 60px 50px;
+    }
+
+    .bg-grey {
+        background-color: #f6f6f6;
+    }
+
+    .logo-small {
+        color: #f4511e;
+        font-size: 50px;
+    }
+
+    .logo {
+        color: #f4511e;
+        font-size: 200px;
+    }
+
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+        background-image: none;
+        color: #f4511e;
+    }
+
+    .carousel-indicators li {
+        border-color: #f4511e;
+    }
+
+    .carousel-indicators li.active {
+        background-color: #f4511e;
+    }
+
+    .item h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        font-weight: 400;
+        font-style: italic;
+        margin: 70px 0;
+    }
+
+    .item span {
+        font-style: normal;
+    }
+
+    .panel {
+        border: 1px solid #f4511e;
+        border-radius: 0 !important;
+        transition: box-shadow 0.5s;
+    }
+
+    .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+    }
+
+    .panel-footer .btn:hover {
+        border: 1px solid #f4511e;
+        background-color: #fff !important;
+        color: #f4511e;
+    }
+
+    .panel-heading {
+        color: #fff !important;
+        background-color: #f4511e !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .panel-footer {
+        background-color: white !important;
+    }
+
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+
+    .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #f4511e;
+        color: #fff;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        background-color: #043d3d;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+        color: #fff !important;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+        color: #f4511e !important;
+        background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+
+    footer .glyphicon {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #f4511e;
+    }
+
+    .slideanim {
+        visibility: hidden;
+    }
+
+    .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+
+    @keyframes slide {
+        0% {
+            opacity: 0;
+            transform: translateY(70%);
         }
-    
-        h2 {
-            font-size: 24px;
-            text-transform: uppercase;
-            color: #303030;
-            font-weight: 600;
-            margin-bottom: 30px;
+
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
         }
-    
-        h4 {
-            font-size: 19px;
-            line-height: 1.375em;
-            color: #303030;
-            font-weight: 400;
-            margin-bottom: 30px;
+    }
+
+    @-webkit-keyframes slide {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
         }
-    
-        .jumbotron {
-            background-color: #11767e;
-            color: #fff;
-            padding: 100px 25px;
-            font-family: Montserrat, sans-serif;
+
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
         }
-    
-        .container-fluid {
-            padding: 60px 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
         }
-    
-        .bg-grey {
-            background-color: #f6f6f6;
-        }
-    
-        .logo-small {
-            color: #f4511e;
-            font-size: 50px;
-        }
-    
-        .logo {
-            color: #f4511e;
-            font-size: 200px;
-        }
-    
-        .thumbnail {
-            padding: 0 0 15px 0;
-            border: none;
-            border-radius: 0;
-        }
-    
-        .thumbnail img {
+
+        .btn-lg {
             width: 100%;
-            height: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 35px;
         }
-    
-        .carousel-control.right,
-        .carousel-control.left {
-            background-image: none;
-            color: #f4511e;
+    }
+
+    @media screen and (max-width: 480px) {
+        .logo {
+            font-size: 150px;
         }
-    
-        .carousel-indicators li {
-            border-color: #f4511e;
-        }
-    
-        .carousel-indicators li.active {
-            background-color: #f4511e;
-        }
-    
-        .item h4 {
-            font-size: 19px;
-            line-height: 1.375em;
-            font-weight: 400;
-            font-style: italic;
-            margin: 70px 0;
-        }
-    
-        .item span {
-            font-style: normal;
-        }
-    
-        .panel {
-            border: 1px solid #f4511e;
-            border-radius: 0 !important;
-            transition: box-shadow 0.5s;
-        }
-    
-        .panel:hover {
-            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
-        }
-    
-        .panel-footer .btn:hover {
-            border: 1px solid #f4511e;
-            background-color: #fff !important;
-            color: #f4511e;
-        }
-    
-        .panel-heading {
-            color: #fff !important;
-            background-color: #f4511e !important;
-            padding: 25px;
-            border-bottom: 1px solid transparent;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
-    
-        .panel-footer {
-            background-color: white !important;
-        }
-    
-        .panel-footer h3 {
-            font-size: 32px;
-        }
-    
-        .panel-footer h4 {
-            color: #aaa;
-            font-size: 14px;
-        }
-    
-        .panel-footer .btn {
-            margin: 15px 0;
-            background-color: #f4511e;
-            color: #fff;
-        }
-    
-        .navbar {
-            margin-bottom: 0;
-            background-color: #043d3d;
-            z-index: 9999;
-            border: 0;
-            font-size: 12px !important;
-            line-height: 1.42857143 !important;
-            letter-spacing: 4px;
-            border-radius: 0;
-            font-family: Montserrat, sans-serif;
-        }
-    
-        .navbar li a,
-        .navbar .navbar-brand {
-            color: #fff !important;
-        }
-    
-        .navbar-nav li a:hover,
-        .navbar-nav li.active a {
-            color: #f4511e !important;
-            background-color: #fff !important;
-        }
-    
-        .navbar-default .navbar-toggle {
-            border-color: transparent;
-            color: #fff !important;
-        }
-    
-        footer .glyphicon {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #f4511e;
-        }
-    
-        .slideanim {
-            visibility: hidden;
-        }
-    
-        .slide {
-            animation-name: slide;
-            -webkit-animation-name: slide;
-            animation-duration: 1s;
-            -webkit-animation-duration: 1s;
-            visibility: visible;
-        }
-    
-        @keyframes slide {
-            0% {
-                opacity: 0;
-                transform: translateY(70%);
-            }
-    
-            100% {
-                opacity: 1;
-                transform: translateY(0%);
-            }
-        }
-    
-        @-webkit-keyframes slide {
-            0% {
-                opacity: 0;
-                -webkit-transform: translateY(70%);
-            }
-    
-            100% {
-                opacity: 1;
-                -webkit-transform: translateY(0%);
-            }
-        }
-    
-        @media screen and (max-width: 768px) {
-            .col-sm-4 {
-                text-align: center;
-                margin: 25px 0;
-            }
-    
-            .btn-lg {
-                width: 100%;
-                margin-bottom: 35px;
-            }
-        }
-    
-        @media screen and (max-width: 480px) {
-            .logo {
-                font-size: 150px;
-            }
-        }
-    </style>
-    </head>
-    
-    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#myPage">Logo</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#education">EDUCATION</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#internship">INTERNSHIPS</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#pricing">PRICING</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+    }
+</style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" active>ABOUT</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#internship">INTERNSHIPS</a></li>
+                    <li><a href="#portfolio">PROJECTS</a></li>               
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Vishnu Vardhan Nagsamudram</h1>
+        <p>Electronics and Communication(E.C.E)</p>
+        <p>This Digital Portfolio provides deep insight about me, like who I am what and I can offer</p>
+
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>About Me</h2><br>
+
+                <h4>I am currently searching for job as a Frontend Developer that will enable me to utilize and
+                    further develop the knowledge and experience I have obtained throughout my College career and
+                    Internships.
+                    ​
+                    Through this digital portfolio, I hope to provide future employers with more insight than cannot be
+                    provided by a resume as to who I am and what I have to offer.</h4>
+                <br><button class="btn btn-default btn-lg" onclick="getIn()"></a>Get in Touch</button>
+            </div>
+            <div class="col-sm-4">
+                <!-- <span class="glyphicon glyphicon-signal logo"></span> -->
+            </div>
+        </div>
+    </div>
+    <!-- Container (Resume Section)-->
+    <div id="education" class="container-fluid text-center bg-grey">
+        <div class="row">
+            <h2>Education</h2><br>
+            <div class="col-sm-4">
+
+                <span class="newstyle">Btech</span><br>
+                <span>NIIT University</span><br>
+                <span>Grade:</span> <span>6.07</span>
+            </div>
+            <div class="col-sm-4">
+                <span class="newstyle">Intermediate</span><br>
+                <span>Abhyaas Junior College</span><br>
+                <span>Percentage:</span><span>92.2</span>
+            </div>
+            <div class="col-sm-4">
+                <span class="newstyle">SSC</span><br>
+                <span>Indus High School</span><br>
+                <span>Grade:</span><span>9.5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (skills Section) -->
+    <div id="skills" class="container-fluid text-center">
+        <h2>Skills</h2>
+
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="angular.png" alt="angular" width="60" height="50">
+                    <p><strong>Angular</strong></p>
+
                 </div>
             </div>
-        </nav>
-    
-        <div class="jumbotron text-center">
-            <h1>Vishnu Vardhan Nagsamudram</h1>
-            <p>Electronics and Communication(E.C.E)</p>
-    
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="node.png" alt="angular" width="60" height="50">
+                    <p><strong>Node.Js</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="sql.png" alt="angular" width="60" height="50">
+                    <p><strong>SQL</strong></p>
+
+                </div>
+            </div>
+
+
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="html.png" alt="angular" width="60" height="50">
+                    <p><strong>HTML</strong></p>
+
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="javascript.png" alt="angular" width="60" height="50">
+                    <p><strong>JAVA SCRIPT</strong></p>
+                </div>
+            </div>
         </div>
-    
-        <!-- Container (About Section) -->
-        <div id="about" class="container-fluid">
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="css.jpg" alt="angular" width="60" height="50">
+                    <p><strong>CSS</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="bootstrap.png" alt="angular" width="60" height="50">
+                    <p><strong>BOOTSTRAP</strong></p>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="solidity.png" alt="angular" width="60" height="50">
+                    <p><strong>SOLIDITY</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="hyperledger.png" alt="angular" width="60" height="50">
+                    <p><strong>HYPERLEDGER</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="">
+                    <img src="jira.png" alt="angular" width="60" height="50">
+                    <p><strong>JIRA</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Container (Internships Section)-->
+    <div class="container-fluid bg-grey">
+        <div id="internship" class="container text-center">
+            <h2>Internships</h2>
             <div class="row">
-                <div class="col-sm-8">
-                    <h2>About Me</h2><br>
-    
-                    <h4>I am currently searching for job as a Mean Stack Developer that will enable me to utilize and
-                        further develop the knowledge and experience I have obtained throughout my College career and
-                        Internships.
-                        ​
-                        Through this digital portfolio, I hope to provide future employers with more insight than cannot be
-                        provided by a resume as to who I am and what I have to offer.</h4>
-                    <br><button class="btn btn-default btn-lg">Get in Touch</button>
+                <div class="col-sm-6">
+                    <h3 class="newstyle">Volkswagen IT Services(JAN-2019 - Present)</h3><br>
+                    <p>Currently working on Multiple Projects, Responsible for Frontend Development of the Projects</p>
                 </div>
-                <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-signal logo"></span>
+                <div class="col-sm-6">
+                    <h3 class="newstyle">DRDO, Hyderabad (May-2018 - July-2018)</h3><br>
+                    <p>Created Development and Testing environment in Matlab/Simulink for Radar/Seeker which are used in
+                        Tracking Guided Missiles</p>
                 </div>
+
             </div>
         </div>
-        <!-- Container (Resume Section)-->
-        <div id="education" class="container-fluid text-center bg-grey">
-            <div class="row">
-                <h2>Education</h2><br>
-                <div class="col-sm-4">
-    
-                    <span>Btech</span><br>
-                    <span>NIIT University</span><br>
-                    <span>Grade:</span> <span>6.07</span>
-                </div>
-                <div class="col-sm-4">
-                    <span>Intermediate</span><br>
-                    <span>Abhyaas Junior College</span><br>
-                    <span>Percentage:</span><span>92.2</span>
-                </div>
-                <div class="col-sm-4">
-                    <span>Metriculation</span><br>
-                    <span>Indus High School</span><br>
-                    <span>Grade:</span><span>9.5</span>
-                </div>
+    </div>
+
+
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center">
+        <h2>PROJECTS</h2><br>
+
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <label class="newstyle"><strong>R360 (March-2019 to Present)</strong></label>
+                <label>Creating an Application for Managing all the Resources within an Organization in effective
+                    way</label>
+            </div>
+            <div class="col-sm-4">
+                <label class="newstyle">IMS (June-2019 to Present)</label>
+                <label>Developing a centralised platform within the Organization for Proposing New Ideas or Suggestions
+                    in existing ideas</label>
+            </div>
+            <div class="col-sm-4">
+                <label class="newstyle">POC on Blockchain (April-2019 to June-2019)</label>
+                <label>Created an Interview form using Blockchain Technology, which creates a smart contract between the
+                    Interview Candidate and the Organization if the candidate scores more than the Threshold score set
+                    by the Interviewer</label>
+            </div>
+        </div><br>
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <label class="newstyle">BLE Tracking</label>
+                <label>Fixed BLEs on different devices and in a closed room, configured it using an Arduino. It sends an
+                    alert whenever a device comes in the radius of a room</label>
+            </div>
+            <div class="col-sm-4">
+                <label class="newstyle">Laundry App</label>
+                <label>Created an App using Android Studio which
+                    calulates the number of clothes given per individual in a week and stores the information in a
+                    Database</label>
+            </div>
+            <div class="col-sm-4">
+                <label class="newstyle">
+                    Implementation of Static Mail Server
+                </label>
+                <label>
+                    An email can be sent/received only in network of systems which are statically routed.
+                </label>
+            </div>
+        </div><br>
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <label class="newstyle">Obstacle Avoiding Rover</label>
+                <label>The robot that we built uses ultrasonic sensor calculates the distance of
+                    obstacles on its three sides and moves in the direction which has more free movement compared to the
+                    rest.</label>
+            </div>
+            <div class="col-sm-4">
+                <label class="newstyle">Interfacing WIFI module and storing data in cloud</label>
+                <label>Checking surrounding weather condition through the temperature sensor connected to an Arduino and
+                    storing the data in Thing Speak</label>
+            </div>
+            <div class="col-sm-4">
+                <label class="newstyle">Multirate DSP and Audio Codecs</label>
+                <label>Implemented Multiple Sampling rates of a single Audio Codec by using Matlab
+                </label>
             </div>
         </div>
-    
-        <!-- Container (skills Section) -->
-        <div id="skills" class="container-fluid text-center">
-            <h2>Skills</h2>
-    
-            <br>
-            <div class="row slideanim">
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="angular.png" alt="angular" width="60" height="50">
-                        <p><strong>Angular</strong></p>
-    
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="node.png" alt="angular" width="60" height="50">
-                        <p><strong>Node.Js</strong></p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="sql.png" alt="angular" width="60" height="50">
-                        <p><strong>SQL</strong></p>
-    
-                    </div>
-                </div>
-    
-    
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="html.png" alt="angular" width="60" height="50">
-                        <p><strong>HTML</strong></p>
-    
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="javascript.png" alt="angular" width="60" height="50">
-                        <p><strong>JAVA SCRIPT</strong></p>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="row slideanim">
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="css.jpg" alt="angular" width="60" height="50">
-                        <p><strong>CSS</strong></p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="bootstrap.png" alt="angular" width="60" height="50">
-                        <p><strong>BOOTSTRAP</strong></p>
-                    </div>
-                </div>
-    
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="solidity.png" alt="angular" width="60" height="50">
-                        <p><strong>SOLIDITY</strong></p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="hyperledger.png" alt="angular" width="60" height="50">
-                        <p><strong>HYPERLEDGER</strong></p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="">
-                        <img src="jira.png" alt="angular" width="60" height="50">
-                        <p><strong>JIRA</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!--Container (Internships Section)-->
-        <div class="container-fluid bg-grey">
-            <div id="internship" class="container text-center">
-                <h2>Internships</h2>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="style">Volkswagen IT Services(JAN-2019 - Present)</h3><br>
-                        <p>Currently working on Multiple Projects, Responsible for Frontend Development of the Projects</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>DRDO, Hyderabad (May-2018 - July-2018)</h3><br>
-                        <p>Created Development and Testing environment in Matlab/Simulink for Radar/Seeker which are used in
-                            Tracking Guided Missiles</p>
-    
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    
-    
-        <!-- Container (Portfolio Section) -->
-        <div id="portfolio" class="container-fluid text-center">
-            <h2>Portfolio</h2><br>
-            <h4>What we have created</h4>
-            <div class="row text-center slideanim">
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="paris.jpg" alt="Paris" width="400" height="300">
-                        <p><strong>Paris</strong></p>
-                        <p>Yes, we built Paris</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="newyork.jpg" alt="New York" width="400" height="300">
-                        <p><strong>New York</strong></p>
-                        <p>We built New York</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-                        <p><strong>San Francisco</strong></p>
-                        <p>Yes, San Fran is ours</p>
-                    </div>
-                </div>
-            </div><br>
-    
-            <h2>What our customers say</h2>
-            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-    
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice
-                                President, Comment Box</span></h4>
-                    </div>
-                    <div class="item">
-                        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-                    </div>
-                    <div class="item">
-                        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor,
-                                FriendsAlot</span></h4>
-                    </div>
-                </div>
-    
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    
-        <!-- Container (Pricing Section) -->
-        <div id="pricing" class="container-fluid">
-            <div class="text-center">
-                <h2>Pricing</h2>
-                <h4>Choose a payment plan that works for you</h4>
-            </div>
-            <div class="row slideanim">
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>Basic</h1>
-                        </div>
-                        <div class="panel-body">
-                            <p><strong>20</strong> Lorem</p>
-                            <p><strong>15</strong> Ipsum</p>
-                            <p><strong>5</strong> Dolor</p>
-                            <p><strong>2</strong> Sit</p>
-                            <p><strong>Endless</strong> Amet</p>
-                        </div>
-                        <div class="panel-footer">
-                            <h3>$19</h3>
-                            <h4>per month</h4>
-                            <button class="btn btn-lg">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>Pro</h1>
-                        </div>
-                        <div class="panel-body">
-                            <p><strong>50</strong> Lorem</p>
-                            <p><strong>25</strong> Ipsum</p>
-                            <p><strong>10</strong> Dolor</p>
-                            <p><strong>5</strong> Sit</p>
-                            <p><strong>Endless</strong> Amet</p>
-                        </div>
-                        <div class="panel-footer">
-                            <h3>$29</h3>
-                            <h4>per month</h4>
-                            <button class="btn btn-lg">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>Premium</h1>
-                        </div>
-                        <div class="panel-body">
-                            <p><strong>100</strong> Lorem</p>
-                            <p><strong>50</strong> Ipsum</p>
-                            <p><strong>25</strong> Dolor</p>
-                            <p><strong>10</strong> Sit</p>
-                            <p><strong>Endless</strong> Amet</p>
-                        </div>
-                        <div class="panel-footer">
-                            <h3>$49</h3>
-                            <h4>per month</h4>
-                            <button class="btn btn-lg">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+
+
+
         <!-- Container (Contact Section) -->
         <div id="contact" class="container-fluid bg-grey">
             <h2 class="text-center">CONTACT</h2>
             <div class="row">
                 <div class="col-sm-5">
                     <p>Contact us and we'll get back to you within 24 hours.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-                    <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Pune, India</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +91 8309088217</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> vishnuvardhan048@gmail.com</p>
                 </div>
                 <div class="col-sm-7 slideanim">
                     <div class="row">
@@ -553,7 +495,8 @@
                             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
                         </div>
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                required>
                         </div>
                     </div>
                     <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
@@ -566,18 +509,17 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Image of location/map -->
-        <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
     
+
         <footer class="container-fluid text-center">
             <a href="#myPage" title="To Top">
                 <span class="glyphicon glyphicon-chevron-up"></span>
             </a>
-            <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a>
-            </p>
+           
         </footer>
-    
+
         <script>
             $(document).ready(function () {
                 // Add smooth scrolling to all links in navbar + footer link
@@ -586,26 +528,26 @@
                     if (this.hash !== "") {
                         // Prevent default anchor click behavior
                         event.preventDefault();
-    
+
                         // Store hash
                         var hash = this.hash;
-    
+
                         // Using jQuery's animate() method to add smooth page scroll
                         // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                         $('html, body').animate({
                             scrollTop: $(hash).offset().top
                         }, 900, function () {
-    
+
                             // Add hash (#) to URL when done scrolling (default click behavior)
                             window.location.hash = hash;
                         });
                     } // End if
                 });
-    
+
                 $(window).scroll(function () {
                     $(".slideanim").each(function () {
                         var pos = $(this).offset().top;
-    
+
                         var winTop = $(window).scrollTop();
                         if (pos < winTop + 600) {
                             $(this).addClass("slide");
@@ -614,7 +556,7 @@
                 });
             })
         </script>
-    
-    </body>
-    
-    </html> -->
+
+</body>
+
+</html> 
